@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=jagobelanja;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: mikhael
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: development
+  security:
+    user:
+      name: mikhael
+      password: mikhael
+
+springdoc:
+  swagger-ui:
+    path: /api-docs
+
+server:
+  port: 8080

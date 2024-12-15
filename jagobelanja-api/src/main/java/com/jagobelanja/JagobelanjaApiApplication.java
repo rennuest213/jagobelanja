@@ -1,4 +1,4 @@
-package com.jagobelanja.jagobelanja_api;
+package com.jagobelanja;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
