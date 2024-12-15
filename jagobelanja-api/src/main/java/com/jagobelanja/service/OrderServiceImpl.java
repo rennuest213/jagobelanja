@@ -24,7 +24,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Order getOrder(long id) {
+    public Order getOrder(int id) {
         return orderRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
     }
@@ -44,7 +44,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void deleteOrder(long id) {
-        orderRepository.deleteById((long) id);
+    public void deleteOrder(int id) {
+        orderRepository.deleteById(id);
     }
 }

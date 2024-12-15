@@ -24,7 +24,7 @@ public class OrderItemServiceImpl implements OrderItemService {
     }
 
     @Override
-    public OrderItem getOrderItemById(long id) {
+    public OrderItem getOrderItemById(int id) {
         return orderItemRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Order Item not found"));
     }
@@ -44,7 +44,7 @@ public class OrderItemServiceImpl implements OrderItemService {
     }
 
     @Override
-    public void deleteOrderItem(long id) {
+    public void deleteOrderItem(int id) {
         orderItemRepository.deleteById(id);
     }
 }

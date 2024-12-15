@@ -11,7 +11,7 @@ public interface ProductService {
     List<Product> getProducts();
 
     //get product by id
-    Product getProduct(long id);
+    Product getProduct(int id);
 
     //add product
     Product addProduct(Product product);
@@ -20,5 +20,5 @@ public interface ProductService {
     Product updateProduct(Product product);
 
     //delete product
-    void deleteProduct(long id);
+    void deleteProduct(int id);
 }

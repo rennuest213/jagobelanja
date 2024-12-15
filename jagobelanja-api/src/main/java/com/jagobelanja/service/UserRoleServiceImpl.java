@@ -23,7 +23,7 @@ public class UserRoleServiceImpl implements UserRoleService {
     }
 
     @Override
-    public UserRole getUserRole(long id) {
+    public UserRole getUserRole(int id) {
         return userRoleRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
     }
@@ -42,7 +42,7 @@ public class UserRoleServiceImpl implements UserRoleService {
     }
 
     @Override
-    public void deleteUserRole(long id) {
+    public void deleteUserRole(int id) {
         userRoleRepository.deleteById(id);
     }
 }

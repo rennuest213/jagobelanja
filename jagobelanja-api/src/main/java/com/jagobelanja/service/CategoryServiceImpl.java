@@ -28,7 +28,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Category getCategoryById(long id) {
+    public Category getCategoryById(int id) {
         logger.info("Fetching category by id: {}", id);
         return categoryRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Invalid category id: " + id));
@@ -49,7 +49,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public void deleteCategory(long id) {
+    public void deleteCategory(int id) {
         categoryRepository.deleteById(id);
     }
 }

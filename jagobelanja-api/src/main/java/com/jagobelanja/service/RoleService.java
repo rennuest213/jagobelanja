@@ -9,7 +9,7 @@ public interface RoleService {
     List<Role> getRoles();
 
     //get role by id
-    Role getRole(long id);
+    Role getRole(int id);
 
     //create role
     Role createRole(Role role);
@@ -18,5 +18,5 @@ public interface RoleService {
     Role updateRole(Role role);
 
     //delete role
-    void deleteRole(long id);
+    void deleteRole(int id);
 }

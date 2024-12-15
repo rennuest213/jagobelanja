@@ -10,7 +10,7 @@ public interface UserRoleService {
     List<UserRole> getUserRoles();
 
     //get user role by id
-    UserRole getUserRole(long id);
+    UserRole getUserRole(int id);
 
     //create user role
     UserRole saveUserRole(UserRole userRole);
@@ -19,5 +19,5 @@ public interface UserRoleService {
     UserRole updateUserRole(UserRole userRole);
 
     //delete user role
-    void deleteUserRole(long id);
+    void deleteUserRole(int id);
 }

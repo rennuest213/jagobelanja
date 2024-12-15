@@ -11,7 +11,7 @@ public interface OrderService {
     List<Order> getOrders();
 
     //get order by id
-    Order getOrder(long id);
+    Order getOrder(int id);
 
     //create order
     Order createOrder(Order order);
@@ -20,5 +20,5 @@ public interface OrderService {
     Order updateOrder(Order order);
 
     //delete order
-    void deleteOrder(long id);
+    void deleteOrder(int id);
 }

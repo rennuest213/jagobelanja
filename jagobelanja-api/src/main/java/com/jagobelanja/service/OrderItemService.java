@@ -10,7 +10,7 @@ public interface OrderItemService {
     List<OrderItem> getOrderItems();
 
     //get order item by id
-    OrderItem getOrderItemById(long id);
+    OrderItem getOrderItemById(int id);
 
     //create order item
     OrderItem createOrderItem(OrderItem orderItem);
@@ -19,5 +19,5 @@ public interface OrderItemService {
     OrderItem updateOrderItem(OrderItem orderItem);
 
     //delete order item
-    void deleteOrderItem(long id);
+    void deleteOrderItem(int id);
 }
